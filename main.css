@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Fira+Sans:wght@400;500;600&family=Germania+One&family=Josefin+Sans&family=Lato&family=Lobster&family=Nunito&family=Oleo+Script&family=Oswald:wght@300;400;500;700&family=PT+Sans:ital@1&family=Poppins:wght@400;500&family=Ubuntu:ital,wght@0,400;0,700;1,500&family=Yanone+Kaffeesatz:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container .header{
+    width: 100%;
+    text-align: center;
+}
+.container .header .title {
+    margin-bottom: 30px;
+}
+.container .header .title h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(5, 5, 158);
+    text-transform: capitalize;
+}
+.container .header .title p{
+    font-family: pt sans;
+    margin-top: 20px;
+}
+.container .header .title cite{
+    color: rgb(5, 5, 158);
+    font-weight: bold;
+}
+.container .header .form{
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(5, 5, 158);
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+.container .header .form input{
+    padding: 10px 0;
+    padding-left: 15px;
+    border: 0;
+    flex: 1;
+    background: transparent;
+    outline: none;
+}
+.container .header .form .search-icon{
+    background: rgb(215, 120, 4);
+    width: 40px;
+    height:40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.container .header .form .search-icon i{
+    pointer-events: none;
+}
+
+.container .body{
+    margin-top: 50px;
+}
+.container .body .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    text-align: center;
+}
+.container .body .grid .card{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.4);
+    border-radius: 10px;
+}
+.container .body .grid .card img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.container .body .grid .card .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container .body .grid .card .details h4{
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.container .body .grid .card .details .food-btn{
+    width: 60%;
+    border: 0;
+    display: block;
+    height: 35px;
+    border-radius: 100px;
+    outline: none;
+    background: rgb(64, 64, 163);
+    color: white;
+    cursor: pointer;
+}
+.red{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
